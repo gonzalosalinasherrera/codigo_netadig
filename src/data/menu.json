@@ -1,0 +1,25 @@
+{
+  "data": [ 
+        {
+          "title": "Usuario", "icon": "users", "type": "sub", "active": false, "children": [
+            { "path": "/usuarios/mi_perfil/", "title": "Mi Perfil", "type": "link" },
+            { "path": "/usuarios/editar_perfil/", "title": "Editar Perfil", "type": "link" },
+            { "path": "/usuarios/usuarios", "title": "Usuarios", "type": "link" }     
+          ]
+        },
+        {
+          "title": "Organizacion", "icon": "home", "type": "sub", "active": false, "children": [
+            { "path": "/organizaciones/organizaciones", "title": "Organizaciones", "type": "link" },
+            { "path": "/organizaciones/mis_organizaciones/", "title": "Mis Organizaciones", "type": "link" },
+            { "path": "/organizaciones/crear_organizacion", "title": "Nueva Organizacion", "type": "link" }     
+          ]
+        },
+        {
+          "title": "Grupo", "icon": "message-square", "type": "sub", "active": false, "children": [
+            { "path": "/grupos/grupos", "title": "Grupos", "type": "link" },
+            { "path": "/grupos/mis_grupos/", "title": "Mis Grupos", "type": "link" },
+            { "path": "/grupos/crear_grupo", "title": "Nuevo Grupo", "type": "link" }
+          ]
+        }
+      ] 
+}
