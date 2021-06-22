@@ -16,9 +16,9 @@
             <h1 class="text-center">{{gr.nombre}}</h1>
             <div align="right">
               <br>
-              <li class="list-inline-item pr-3" >
-                <label class="m-0"><a href="#"><i class="fa fa-envelope-o mr-2"></i></a>{{gr.fb}}, {{gr.ig}}, {{gr.tw}}</label>
-              </li>
+              <ul class="list-inline-item pr-3" >
+                <label class="m-0"><a href="#"><em class="fa fa-envelope-o mr-2"></em></a>{{gr.fb}}, {{gr.ig}}, {{gr.tw}}</label>
+              </ul>
             </div>
         </div>
     </div>

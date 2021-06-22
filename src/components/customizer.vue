@@ -15,7 +15,7 @@
           @click="openCustomizerSetting('settings')"
         >
           <div class="settings">
-            <i class="icofont icofont-ui-settings"></i>
+            <em class="icofont icofont-ui-settings"></em>
           </div>
         </a>
         <a
@@ -26,7 +26,7 @@
           @click="openCustomizerSetting('color')"
         >
           <div class="settings color-settings">
-            <i class="icofont icofont-color-bucket"></i>
+            <em class="icofont icofont-color-bucket"></em>
           </div>
         </a>
       </div>
@@ -34,7 +34,7 @@
     <div class="customizer-contain" :class="{'open' : customizer }">
       <div class="tab-content" id="c-pills-tabContent">
         <div class="customizer-header">
-          <i class="icofont-close icon-close" @click="customizer = ''"></i>
+          <em class="icofont-close icon-close" @click="customizer = ''"></em>
           <h5>Customizer</h5>
           <p class="mb-0">Customize &amp; Preview Real Time</p>
           <button v-b-modal.modal-customizer class="btn btn-primary plus-popup mt-2">Configuration</button>
@@ -46,7 +46,7 @@
               <div class="modal-header config-popup">
                 <p>To replace our design with your desired theme. Please do configuration as mention</p>
                 <p>
-                  <b>Path : src > data > layout.json</b>
+                  <strong>Path : src > data > layout.json</strong>
                 </p>
                 <div>
                   <pre>

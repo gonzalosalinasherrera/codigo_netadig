@@ -151,7 +151,7 @@
                   :class="'badge badge-'+childrenItem.badgeType+' pull-right'"
                   v-if="childrenItem.badgeType"
                 >{{childrenItem.badgeValue}}</span>
-                <i class="fa fa-angle-right pull-right" v-if="childrenItem.children"></i>
+                <em class="fa fa-angle-right pull-right" v-if="childrenItem.children"></em>
               </a>
               <!-- External Tab Link -->
               <a :href="childrenItem.path" target="_blank" v-if="childrenItem.type == 'extTabLink'">

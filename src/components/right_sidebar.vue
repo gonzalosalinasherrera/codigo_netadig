@@ -20,7 +20,7 @@
           type="text"
           placeholder="search"
         />
-        <i class="fa fa-search"></i>
+        <em class="fa fa-search"></em>
       </div>
       <div class="p-l-30 p-r-30">
         <div class="chat-box">

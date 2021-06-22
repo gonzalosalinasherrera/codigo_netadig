@@ -81,8 +81,6 @@ export default {
       this.$router.push('/inicio/ingreso')
     },
     getImgUrl() {
-    // console.log("localStorage.getItem('Userinfo').photoURL", localStorage.getItem('Userinfo'));
-    
     return (localStorage.getItem('Userinfo')?localStorage.getItem('Userinfo').photoURL:require("../assets/images/dashboard/user.png"))
     },
     searchTerm: function() {

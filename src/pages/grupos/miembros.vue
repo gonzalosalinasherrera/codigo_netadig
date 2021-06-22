@@ -17,10 +17,10 @@
             <router-link :to="{name: 'Profile', params: {id: user.usuario.id}}"><div class="card-header"><img class="img-fluid" v-bind:src="user.imgprofile" alt="" style="width: 420px; height: 420px;"></div></router-link> 
             <div class="card-profile"><img class="rounded-circle" v-bind:src="user.avatar" alt="" style="width: 170px; height: 170px;"></div>
             <ul class="card-social">
-              <li class="list-inline-item"><a v-bind:href="user.fb"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a v-bind:href="user.gm"> <i class="fa fa-google-plus"></i></a></li> 
-              <li class="list-inline-item"><a v-bind:href="user.tw"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a v-bind:href="user.ig"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a v-bind:href="user.fb"><em class="fa fa-facebook"></em></a></li>
+              <li class="list-inline-item"><a v-bind:href="user.gm"><em class="fa fa-google-plus"></em></a></li> 
+              <li class="list-inline-item"><a v-bind:href="user.tw"><em class="fa fa-twitter"></em></a></li>
+              <li class="list-inline-item"><a v-bind:href="user.ig"><em class="fa fa-instagram"></em></a></li>
             </ul>
             <div class="text-center profile-details">
               <h4>{{user.usuario.first_name}} {{user.usuario.last_name}}</h4>

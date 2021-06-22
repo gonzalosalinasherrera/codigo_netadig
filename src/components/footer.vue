@@ -7,7 +7,7 @@
             <p class="mb-0">-----</p>
           </div>
           <div class="col-md-6">
-            <p class="pull-right mb-0">Realizado por Gonzalo Salinas Herrera<i class="fa fa-desktop"></i></p>
+            <p class="pull-right mb-0">Realizado por Gonzalo Salinas Herrera<em class="fa fa-desktop"></em></p>
           </div>
         </div>
       </div>

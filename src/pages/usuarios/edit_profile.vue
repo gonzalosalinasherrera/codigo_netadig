@@ -9,7 +9,7 @@
               <div class="card">
                 <div class="card-header">
                   <h4 class="card-title mb-0">Mi Perfil</h4>
-                  <div class="card-options"><a class="card-options-collapse" href="#" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-toggle="card-remove"><i class="fe fe-x"></i></a></div>
+                  <div class="card-options"><a class="card-options-collapse" href="#" data-toggle="card-collapse"><em class="fe fe-chevron-up"></em></a><a class="card-options-remove" href="#" data-toggle="card-remove"><i class="fe fe-x"></i></a></div>
                 </div>
                 <div class="card-body">
                   <form>
@@ -24,10 +24,6 @@
                       <label for="email" class="form-label">Correo</label>
                       <input v-model="email" name="email" id="email" class="form-control" type="email" placeholder="your-email@email.com">
                     </div>
-<!--                         <div class="form-group">
-                          <label for="password" class="form-label">Contraseña</label>
-                          <input v-model="password" id="password" name=" password" class="form-control" type="password" value="password">
-                        </div> -->
                     <div class="form-group">
                       <label for="first_name" class="form-label">Nombre</label>
                       <input name="first_name" id="first_name" v-model="first_name" class="form-control" type="text" placeholder="Nombre">
@@ -153,7 +149,6 @@
 
 <script>
 import axios from 'axios';
-import swal from 'sweetalert';
 export default {
   data(){
     return{

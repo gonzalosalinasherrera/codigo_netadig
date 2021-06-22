@@ -82,10 +82,10 @@
                                         <div class="form-divider"></div>
                                         <div class="social mt-3">
                                             <div class="form-group btn-showcase d-flex">
-                                                <button class="btn social-btn btn-fb d-inline-block"> <i class="fa fa-facebook"></i></button>
-                                                <button class="btn social-btn btn-twitter d-inline-block"><i class="fa fa-google"></i></button>
-                                                <button class="btn social-btn btn-google d-inline-block"><i class="fa fa-twitter"></i></button>
-                                                <button class="btn social-btn btn-github d-inline-block"><i class="fa fa-github"></i></button>
+                                                <button class="btn social-btn btn-fb d-inline-block"> <em class="fa fa-facebook"></em></button>
+                                                <button class="btn social-btn btn-twitter d-inline-block"><em class="fa fa-google"></em></button>
+                                                <button class="btn social-btn btn-google d-inline-block"><em class="fa fa-twitter"></em></button>
+                                                <button class="btn social-btn btn-github d-inline-block"><em class="fa fa-github"></em></button>
                                             </div>
                                         </div>
                                     </form>

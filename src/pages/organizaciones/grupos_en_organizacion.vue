@@ -14,9 +14,9 @@
       </div>
     </div>
     <div class="row justify-content-around">
-      <div class="card" v-for="gr in filteredList" style="width: 25rem;">
-        <router-link :to="{name: 'GrupoProfileOrganizacion', params: {id: gr.id}}"><div class="card-header"><img class="img-fluid rounded" v-bind:src="gr.banner" alt="" style="width: 350px; height: 350px;"></div></router-link>
-        <h2 class="text-center">{{gr.nombre}}</h2>
+      <div class="card" v-for="gr in filteredList" style="width: 22rem;">
+        <router-link :to="{name: 'GrupoProfileOrganizacion', params: {id: gr.id}}"><img class="card-img-top" v-bind:src="gr.banner" alt="" style="width: 350px; height: 350px;"></router-link>
+          <h1 class="text-center">{{gr.nombre}}</h1>
       </div>
     </div>
   </div>

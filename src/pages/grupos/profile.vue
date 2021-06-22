@@ -38,7 +38,7 @@
                 <div class="row">
                   <div class="col-lg-12 col-xl-4">
                     <div id="aniimated-thumbnials-3" itemscope="">
-                      <figure><img class="img-fluid rounded" v-bind:src="grupo.banner" style="max-width: 640px; max-height: 300px;">
+                      <figure><img class="img-fluid rounded" v-bind:src="grupo.banner" style="max-width: 640px; max-height: 300px;" alt="">
                       </figure>
                     </div>
                     <div class="like-comment mt-4 like-comment-sm-mb">
@@ -47,11 +47,8 @@
                           <label class="m-0"><a href="#"></a>Miembros</label><span class="ml-2 counter">{{cuantosmiembros()}}</span>
                         </li>
                         <li class="list-inline-item border-right pr-3">
-                          <label class="m-0"><a href="#"><i class="fa fa-envelope-o mr-2"></i></a>{{grupo.fb}}, {{grupo.ig}}, {{grupo.tw}}</label><span class="ml-2 counter"></span>
+                          <label class="m-0"><a href="#"><em class="fa fa-envelope-o mr-2"></em></a>{{grupo.fb}}, {{grupo.ig}}, {{grupo.tw}}</label><span class="ml-2 counter"></span>
                         </li>
-<!--                         <li class="list-inline-item ml-2">
-                          <label class="m-0"><a href="#"></a>Visitas</label><span class="ml-2 counter">569</span>
-                        </li> -->
                       </ul>
                     </div>
                   </div>

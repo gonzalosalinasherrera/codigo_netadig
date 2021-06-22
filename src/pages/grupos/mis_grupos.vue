@@ -17,7 +17,7 @@
         <div>
           <br>
             <li class="list-inline-item pr-3" >
-            <label class="m-0"><a href="#"><i class="fa fa-envelope-o mr-2"></i></a>{{gr.fb}}, {{gr.ig}}, {{gr.tw}}</label>
+            <label class="m-0"><a href="#"><em class="fa fa-envelope-o mr-2"></em></a>{{gr.fb}}, {{gr.ig}}, {{gr.tw}}</label>
           </li>
         </div>
       </div>
