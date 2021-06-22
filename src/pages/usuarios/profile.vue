@@ -19,12 +19,12 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="ttl-info text-left">
-                          <h5 style="text-color: black;"><i class="fa fa-envelope mr-2" style="text-color: black;"></i>Email</h5><span>{{ user.email }}</span>
+                          <h5><em class="fa fa-envelope mr-2" ></em>Email</h5><span>{{ user.email }}</span>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="ttl-info text-left" >
-                          <h5 style="text-color: black;"><i class="fa fa-calendar mr-2" style="text-color: black;"></i>BOD</h5><span>{{ profile.bod }}</span>
+                          <h5><em class="fa fa-calendar mr-2"></em>BOD</h5><span>{{ profile.bod }}</span>
                         </div>
                       </div>
                     </div>
@@ -39,12 +39,12 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="ttl-info text-left">
-                          <h5><i class="fa fa-phone mr-2"></i>Telefono</h5><span>{{profile.telefono}}</span>
+                          <h5><em class="fa fa-phone mr-2"></em>Telefono</h5><span>{{profile.telefono}}</span>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="ttl-info text-left">
-                          <h5><i class="fa fa-location-arrow mr-2"></i>Dirección</h5><span>{{profile.direccion}}, {{profile.ciudad}}, {{profile.pais}}</span>
+                          <h5><em class="fa fa-location-arrow mr-2"></em>Dirección</h5><span>{{profile.direccion}}, {{profile.ciudad}}, {{profile.pais}}</span>
                         </div>
                       </div>
                     </div>
@@ -53,10 +53,10 @@
                 <hr>
                 <div class="social-media">
                   <ul class="list-inline">
-                    <li class="list-inline-item"><a v-bind:href="profile.fb"><i class="fa fa-facebook"></i></a></li>
-                    <li class="list-inline-item"><a v-bind:href="profile.gm"> <i class="fa fa-google-plus"></i></a></li> 
-                    <li class="list-inline-item"><a v-bind:href="profile.tw"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a v-bind:href="profile.ig"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a v-bind:href="profile.fb"><em class="fa fa-facebook"></em></a></li>
+                    <li class="list-inline-item"><a v-bind:href="profile.gm"><em class="fa fa-google-plus"></em></a></li> 
+                    <li class="list-inline-item"><a v-bind:href="profile.tw"><em class="fa fa-twitter"></em></a></li>
+                    <li class="list-inline-item"><a v-bind:href="profile.ig"><em class="fa fa-instagram"></em></a></li>
                   </ul>
                 </div>
                 <div class="follow">

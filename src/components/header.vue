@@ -23,8 +23,6 @@
             </div>
             <ul class="profile-dropdown onhover-show-div p-20">
               <li><a href="/usuarios/editar_perfil"><feather type="user"></feather> Editar Perfil</a></li>
-<!--               <li><a href="#"><feather type="mail"></feather> Inbox</a></li>
-              <li><a href="#"><feather type="settings"></feather> Settings</a></li> -->
               <li @click="logout" ><feather type="log-out"></feather>Cerrar Sesión</li>
             </ul>
           </li>

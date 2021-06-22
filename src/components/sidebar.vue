@@ -32,7 +32,7 @@
           :class="{'d-none': layout.settings.layout_type=='rtl'? hideLeftArrowRTL: hideLeftArrow}"
           @click="(layout.settings.sidebar.type === 'horizontal_sidebar' && layout.settings.layout_type==='rtl') ? scrollToLeftRTL() : scrollToLeft()"
         >
-          <i class="fa fa-angle-left"></i>
+          <em class="fa fa-angle-left"></em>
         </li>
         <li
           v-for="(menuItem, index) in menuItems"
@@ -54,7 +54,7 @@
                 v-if="menuItem.badgeType"
               >{{menuItem.badgeValue}}</span>
             </span>
-            <i class="fa fa-angle-right pull-right" v-if="menuItem.children"></i>
+            <em class="fa fa-angle-right pull-right" v-if="menuItem.children"></em>
           </a>
           <!-- Link -->
           <router-link
@@ -71,7 +71,7 @@
                 v-if="menuItem.badgeType"
               >{{menuItem.badgeValue}}</span>
             </span>
-            <i class="fa fa-angle-right pull-right" v-if="menuItem.children"></i>
+            <em class="fa fa-angle-right pull-right" v-if="menuItem.children"></em>
           </router-link>
           <!-- External Link -->
           <a
@@ -88,7 +88,7 @@
                 v-if="menuItem.badgeType"
               >{{menuItem.badgeValue}}</span>
             </span>
-            <i class="fa fa-angle-right pull-right" v-if="menuItem.children"></i>
+            <em class="fa fa-angle-right pull-right" v-if="menuItem.children"></em>
           </a>
           <!-- External Tab Link -->
           <a
@@ -106,7 +106,7 @@
                 v-if="menuItem.badgeType"
               >{{menuItem.badgeValue}}</span>
             </span>
-            <i class="fa fa-angle-right pull-right" v-if="menuItem.children"></i>
+            <em class="fa fa-angle-right pull-right" v-if="menuItem.children"></em>
           </a>
           <!-- 2nd Level Menu -->
           <ul class="sidebar-submenu" v-if="menuItem.children">
@@ -121,13 +121,13 @@
                 v-if="childrenItem.type == 'sub'"
                 @click="setNavActive(childrenItem, index)"
               >
-                <i class="fa fa-circle"></i>
+                <em class="fa fa-circle"></em>
                 {{childrenItem.title}}
                 <span
                   :class="'badge badge-'+childrenItem.badgeType+' pull-right'"
                   v-if="childrenItem.badgeType"
                 >{{childrenItem.badgeValue}}</span>
-                <i class="fa fa-angle-right pull-right" v-if="childrenItem.children"></i>
+                <em class="fa fa-angle-right pull-right" v-if="childrenItem.children"></em>
               </a>
               <!-- Link -->
               <router-link
@@ -135,17 +135,17 @@
                 v-if="childrenItem.type == 'link'"
                 router-link-exact-active
               >
-                <i class="fa fa-circle"></i>
+                <em class="fa fa-circle"></em>
                 {{childrenItem.title}}
                 <span
                   :class="'badge badge-'+childrenItem.badgeType+' pull-right'"
                   v-if="childrenItem.badgeType"
                 >{{childrenItem.badgeValue}}</span>
-                <i class="fa fa-angle-right pull-right" v-if="childrenItem.children"></i>
+                <em class="fa fa-angle-right pull-right" v-if="childrenItem.children"></em>
               </router-link>
               <!-- External Link -->
               <a :href="childrenItem.path" v-if="childrenItem.type == 'extLink'">
-                <i class="fa fa-circle"></i>
+                <em class="fa fa-circle"></em>
                 {{childrenItem.title}}
                 <span
                   :class="'badge badge-'+childrenItem.badgeType+' pull-right'"
@@ -155,13 +155,13 @@
               </a>
               <!-- External Tab Link -->
               <a :href="childrenItem.path" target="_blank" v-if="childrenItem.type == 'extTabLink'">
-                <i class="fa fa-circle"></i>
+                <em class="fa fa-circle"></em>
                 {{childrenItem.title}}
                 <span
                   :class="'badge badge-'+childrenItem.badgeType+' pull-right'"
                   v-if="childrenItem.badgeType"
                 >{{childrenItem.badgeValue}}</span>
-                <i class="fa fa-angle-right pull-right" v-if="childrenItem.children"></i>
+                <em class="fa fa-angle-right pull-right" v-if="childrenItem.children"></em>
               </a>
               <!-- 3rd Level Menu -->
               <ul class="sidebar-submenu horizontal-child-sub" v-if="childrenItem.children">
@@ -172,23 +172,23 @@
                     v-if="childrenSubItem.type == 'link'"
                     router-link-exact-active
                   >
-                    <i class="fa fa-circle"></i>
+                    <em class="fa fa-circle"></em>
                     {{childrenSubItem.title}}
                     <span
                       :class="'badge badge-'+childrenSubItem.badgeType+' pull-right'"
                       v-if="childrenSubItem.badgeType"
                     >{{childrenSubItem.badgeValue}}</span>
-                    <i class="fa fa-angle-right pull-right" v-if="childrenSubItem.children"></i>
+                    <em class="fa fa-angle-right pull-right" v-if="childrenSubItem.children"></em>
                   </router-link>
                   <!-- External Link -->
                   <a :href="childrenSubItem.path" v-if="childrenSubItem.type == 'extLink'">
-                    <i class="fa fa-circle"></i>
+                    <em class="fa fa-circle"></em>
                     {{childrenSubItem.title}}
                     <span
                       :class="'badge badge-'+childrenSubItem.badgeType+' pull-right'"
                       v-if="childrenSubItem.badgeType"
                     >{{childrenSubItem.badgeValue}}</span>
-                    <i class="fa fa-angle-right pull-right" v-if="childrenSubItem.children"></i>
+                    <em class="fa fa-angle-right pull-right" v-if="childrenSubItem.children"></em>
                   </a>
                   <!-- External Tab Link -->
                   <a
@@ -196,13 +196,13 @@
                     target="_blank"
                     v-if="childrenSubItem.type == 'extTabLink'"
                   >
-                    <i class="fa fa-circle"></i>
+                    <em class="fa fa-circle"></em>
                     {{childrenSubItem.title}}
                     <span
                       :class="'badge badge-'+childrenSubItem.badgeType+' pull-right'"
                       v-if="childrenSubItem.badgeType"
                     >{{childrenSubItem.badgeValue}}</span>
-                    <i class="fa fa-angle-right pull-right" v-if="childrenSubItem.children"></i>
+                    <em class="fa fa-angle-right pull-right" v-if="childrenSubItem.children"></em>
                   </a>
                 </li>
               </ul>
@@ -214,7 +214,7 @@
           :class="{'d-none': layout.settings.layout_type=='rtl'? hideRightArrowRTL : hideRightArrow }"
           @click="(layout.settings.sidebar.type == 'horizontal_sidebar' && layout.settings.layout_type=='rtl') ? scrollToRightRTL() : scrollToRight()"
         >
-          <i class="fa fa-angle-right"></i>
+          <em class="fa fa-angle-right"></em>
         </li>
       </ul>
     </div>

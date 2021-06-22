@@ -17,10 +17,10 @@
             <router-link :to="{name: 'OrgProfile', params: {id: org.id}}"><div class="card-header"><img class="img-fluid rounded" v-bind:src="org.banner" alt="" style="width: 350px; height: 350px;"></div></router-link> 
             <div class="card-profile"><img class="rounded-circle" v-bind:src="org.avatar" alt="" style="width:40%"></div>
             <ul class="card-social">
-              <li class="list-inline-item"><a v-bind:href="org.fb"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a v-bind:href="org.gm"> <i class="fa fa-google-plus"></i></a></li> 
-              <li class="list-inline-item"><a v-bind:href="org.tw"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a v-bind:href="org.ig"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a v-bind:href="org.fb"><em class="fa fa-facebook"></em></a></li>
+              <li class="list-inline-item"><a v-bind:href="org.gm"><em class="fa fa-google-plus"></em></a></li> 
+              <li class="list-inline-item"><a v-bind:href="org.tw"><em class="fa fa-twitter"></em></a></li>
+              <li class="list-inline-item"><a v-bind:href="org.ig"><em class="fa fa-instagram"></em></a></li>
             </ul>
             <div class="text-center profile-details">
               <h4>{{org.nombre}}</h4>
@@ -58,7 +58,6 @@ export default {
       organizacion: [],
       perPage: 5,
       currentPage: 1,
-      organizacion: [],
       token: localStorage.getItem('user-token') || null,
       user_id: localStorage.getItem('user-id') || null,
     }

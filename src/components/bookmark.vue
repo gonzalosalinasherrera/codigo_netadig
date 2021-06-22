@@ -20,7 +20,7 @@
                </div>
                <div class="ProfileCard-details">
                 <div class="ProfileCard-realName">
-                  <span @click='removeFix()'><router-link :to="{path:menuItem.path}" class="realname" >{{menuItem.title}}</router-link> </span> <a href="JavaScript:void(0);" @click="addToBookmark(menuItem)"><span :class="menuItem.bookmark ? 'text-warning' : ''"><i class="fa fa-star-o f-18 bookmark-search f-right"></i></span></a>
+                  <span @click='removeFix()'><router-link :to="{path:menuItem.path}" class="realname" >{{menuItem.title}}</router-link> </span> <a href="JavaScript:void(0);" @click="addToBookmark(menuItem)"><span :class="menuItem.bookmark ? 'text-warning' : ''"><em class="fa fa-star-o f-18 bookmark-search f-right"></em></span></a>
                 </div>
               </div>
             </div>

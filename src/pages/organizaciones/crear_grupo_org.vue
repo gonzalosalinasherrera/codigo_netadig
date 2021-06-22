@@ -25,44 +25,6 @@
                     </div>
                 </div>
                 <div class="form-group row">
-<!--                     <div class="col-sm-5">
-                        <div class="form-group">
-                            <label for="fb" class="form-label">Facebook</label>
-                            <input class="form-control" type="url" name="fb" id="fb" v-model="fb" placeholder="fb.com/perfil">
-                        </div>
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="form-group">
-                            <label for="ig" class="form-label">Instagram</label>
-                            <input class="form-control" type="url" name="ig" id="ig" v-model="ig" placeholder="ig.com/perfil">
-                        </div>
-                    </div>      
-                    <div class="col-sm-5">
-                        <div class="form-group">
-                            <label for="tw" class="form-label">Twitter</label>
-                            <input class="form-control" type="url" name="tw" id="tw" v-model="tw" placeholder="tw.com/perfil">
-                        </div>
-                    </div>    
-                    <div class="col-sm-5">
-                        <div class="form-group">
-                            <label for="gm" class="form-label">Gmail</label>
-                            <input class="form-control" type="url" name="gm" id="gm" v-model="gm" placeholder="gm.com/perfil">
-                        </div>
-                    </div> -->
-<!--                     <div class="form-group row mb-0">
-                        <div class="col-sm-5">
-                            <label for="">Avatar</label>
-                            <div class="form-group">
-                                <input type="file" accept="image/*" @change="onChange"/>
-                            </div>
-                        </div>
-                        <div class="col-sm-5">
-                            <label for="">Banner</label>
-                            <div class="form-group"> 
-                                <input type="file" accept="image/*" @change="onChange2"/>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>    
             </div>             
             <div class="card-footer">
@@ -92,7 +54,6 @@ export default {
             gm: null,
             ig: null,
             tw: null,
-            avatar: null,
             banner: null,
             user: [],
             member: [],
